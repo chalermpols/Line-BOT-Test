@@ -56,7 +56,7 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 
 			echo $result . "\r\n";
-		} elseif (['message']['type'] == 'location') {
+		} elseif ($event['type'] == 'message' && $event['message']['type'] == 'location') {
 			// Build message to reply back
 			$messages = [
 			'type' => 'text',
