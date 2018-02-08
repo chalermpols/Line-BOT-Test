@@ -19,16 +19,21 @@ if (!is_null($events['events'])) {
 			
 
 			// Build message to reply back
-			$messages = [
-				'type' => 'text',
-				'text' => $text
-			];
+			//$messages = [
+			//	'type' => 'text',
+			//	'text' => $text
+			//];
 			
 			if ($text = "1"){
 				// Build message to reply back
 				$messages = [
 				'type' => 'text',
 				'text' => "แจ้งเคลม"
+				];
+			} else {
+				$messages = [
+				'type' => 'text',
+				'text' => $text
 				];
 			}
 
