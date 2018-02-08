@@ -24,13 +24,13 @@ if (!is_null($events['events'])) {
 				'text' => $text
 			];
 			
-			if $text = "1"{
+			//if $text = "1"{
 				// Build message to reply back
-				$messages = [
-				'type' => 'text',
-				'text' => "แจ้งเคลม"
-				];
-			}
+			//	$messages = [
+			//	'type' => 'text',
+			//	'text' => "แจ้งเคลม"
+			//	];
+			//}
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
