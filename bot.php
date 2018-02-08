@@ -16,14 +16,6 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			
-			
-
-			// Build message to reply back
-			//$messages = [
-			//	'type' => 'text',
-			//	'text' => $text
-			//];
-			
 			if ($text == "1"){
 				// Build message to reply back
 				$messages = [
@@ -33,7 +25,9 @@ if (!is_null($events['events'])) {
 			} else {
 				$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => "ขอบคุณที่ส่งข้อความถึงเรา .. TVIHotline ยินดีบริการ เราพร้อมอยู่เคียงข้างและดูแลคุณตลอด 24 ชม. กรุณากรุณาเลือกบริการที่ท่านต้องการติดต่อ 
+\n กด 1  บริการแจ้งเคลม 
+\n กด 2  บริการแจ้งซ่อม"
 				];
 			}
 
