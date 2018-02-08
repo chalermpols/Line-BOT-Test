@@ -20,13 +20,19 @@ if (!is_null($events['events'])) {
 				// Build message to reply back
 				$messages = [
 				'type' => 'text',
-				'text' => "แจ้งเคลม"
+				'text' => "แจ้งอุบัติเหตุ รบกวนช่วยแชร์ location ครับ"
+				];
+			} elseif ($text == "2"){
+				// Build message to reply back
+				$messages = [
+				'type' => 'text',
+				'text' => "แจ้งซ่อม รบกวนขอเบอร์โทรติดต่อกลับครับ"
 				];
 			} else {
 				$messages = [
 				'type' => 'text',
 				'text' => "ขอบคุณที่ส่งข้อความถึงเรา .. TVIHotline ยินดีบริการ เราพร้อมอยู่เคียงข้างและดูแลคุณตลอด 24 ชม. กรุณากรุณาเลือกบริการที่ท่านต้องการติดต่อ 
-\n กด 1  บริการแจ้งเคลม 
+\n กด 1  บริการแจ้งอุบัติเหตุ 
 \n กด 2  บริการแจ้งซ่อม"
 				];
 			}
