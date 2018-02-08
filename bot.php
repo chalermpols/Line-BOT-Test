@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 				'text' => $text
 			];
 			
-			if $text = '1'{
+			if $text = "1"{
 				// Build message to reply back
 				$messages = [
 				'type' => 'text',
