@@ -40,13 +40,13 @@ if (!is_null($events['events'])) {
 				];
 			}
  			break;
- 			case 'location':
+ 			//case 'location':
  			// Get replyToken
-			$replyToken = $event['replyToken'];
- 			$messages = [
-			'type' => 'text',
-			'text' => "ได้รับ location แล้ว ขอบคุณครับ"];
-			break;
+			//$replyToken = $event['replyToken'];
+ 			//$messages = [
+			//'type' => 'text',
+			//'text' => "ได้รับ location แล้ว ขอบคุณครับ"];
+			//break;
 
 			default:
  			}
