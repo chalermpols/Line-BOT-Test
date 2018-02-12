@@ -12,7 +12,7 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message'{
 
-			switch($item[‘message’][‘type’]){
+			switch($event[‘message’][‘type’]){
  			case ‘text’:
  			// Get text sent
 			$text = $event['message']['text'];
@@ -41,6 +41,8 @@ if (!is_null($events['events'])) {
 			}
  			break;
  			case ‘location’:
+ 			// Get replyToken
+			$replyToken = $event['replyToken'];
  			$messages = [
 			'type' => 'text',
 			'text' => "ได้รับ location แล้ว ขอบคุณครับ"];
