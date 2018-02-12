@@ -56,11 +56,11 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 
 			echo $result . "\r\n";
-		} elseif ($event['type'] == 'message' && $event['message']['type'] == 'location') {
+		} elseif ($event['type'] == 'message' && $event['message']['type'] == 'image') {
 			// Build message to reply back
 			$messages = [
 			'type' => 'text',
-			'text' => "ได้รับ location แล้ว ขอบคุณครับ"
+			'text' => "ได้รับรูปภาพแล้ว ขอบคุณครับ"
 			];
 			
 			// Make a POST Request to Messaging API to reply to sender
