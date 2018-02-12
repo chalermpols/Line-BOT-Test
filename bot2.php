@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
 				];
 			}
  			break;
- 			case 'location':
+ 			case ‘location’:
  			$messages = [
 			'type' => 'text',
 			'text' => "ได้รับ location แล้ว ขอบคุณครับ"];
